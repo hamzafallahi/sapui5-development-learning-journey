@@ -6,27 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
         html, body, body > div, #container, #container-uiarea {
-            height: 100%;
-        }
+                    height: 100%;
+                }
     </style>
     
     <script
     id="sap-ui-bootstrap"
     src="resources/sap-ui-core.js"
     data-sap-ui-theme="sap_fiori_3"
-    data-sap-ui-libs="sap.m"
     data-sap-ui-compatVersion="edge"
     
     data-sap-ui-async="true"
-    data-sap-ui-onInit="module:sap/training/exc/index"
+    
     data-sap-ui-resourceroots='{
-        "sap.training.exc": "./"
+        "sap.training.exc": "./",
+        "my.second.component": "./second/"
     }'
+    data-sap-ui-onInit="module:sap/ui/core/ComponentSupport"
     ></script>
 
     <title>SAPUI5 Development Learning Journey</title>
 </head>
 <body class="sapUiBody" id="content">
+    <div 
+        data-sap-ui-component
+        data-id="container"
+        data-name="sap.training.exc"
+        data-settings='{"id":"sap.training.exc"}'>
+    </div>
+    
+
 
 </body>
 </html>
+<!-- data-sap-ui-onInit="module:sap/training/exc/index" file: ./index.html line: 20 --> 
+<!--    html, body, body > div, #container, #container-uiarea {
+            height: 100%;
+        }   style in line 8 -->
+
+<!-- test component i made to test the manifest.json file and the content density class. It is not part of the learning journey.
+     <div
+        data-sap-ui-component
+        data-id="container2"
+        data-name="my.second.component"
+        data-settings='{"id":"my.second.component"}'>
+    </div>
+        -->

@@ -1,7 +1,7 @@
 {
     "_version": "1.28.0",
     "sap.app": {
-        "id": "sap.training.exc",
+        "id": "my.second.component",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -59,7 +59,7 @@
             }
         },
         "contentDensities": {
-            "compact": true,
+            "compact": false,
             "cozy": true
         },
         "models": {
@@ -91,7 +91,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "sap.training.exc.view",
+                "viewPath": "my.second.component.view",
                 "controlAggregation": "pages",
                 "controlId": "<...>"
             },
@@ -99,7 +99,7 @@
             "targets": {}
         },
         "rootView": {
-            "viewName": "sap.training.exc.view.App",
+            "viewName": "my.second.component.view.App",
             "type": "XML",
             "async": true,
             "id": "App"
