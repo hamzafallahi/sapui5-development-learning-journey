@@ -14,6 +14,10 @@ sap.ui.define([
                 var oModel = new JSONModel();
                 this.getView().setModel(oModel, "customer");
             },
+            onCustomerChange: function (oEvent) {
+                var oBindingContext = oEvent.getParameter("listItem").getBindingContext();
+                this.byId("bookingTable").setBindingContext(oBindingContext);
+            },
             onSave: function () {
                 if (!this.pDialog) {
                     this.pDialog = this.loadFragment({
