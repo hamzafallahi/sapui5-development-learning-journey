@@ -2,6 +2,7 @@
           xmlns:mvc="sap.ui.core.mvc"  
           xmlns="sap.m"
           xmlns:f="sap.ui.layout.form"
+          core:require="{formatter: 'sap/training/exc/model/formatter'}"
           xmlns:core="sap.ui.core">
           
 <Page title="Flight Customers" showNavButton="true" navButtonPress=".onNavBack">
@@ -173,7 +174,10 @@
                                                 style: 'medium'
                                             }
                                         }"/>
-                                        <Text text="{Class}"/>
+                                        <Text text="{
+                                            path: 'Class',
+                                            formatter: 'formatter.classText'
+                                        }"/>
                                         <ObjectNumber
                                             number="{
                                                 parts: [
