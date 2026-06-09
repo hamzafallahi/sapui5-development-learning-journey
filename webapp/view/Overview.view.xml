@@ -59,7 +59,7 @@
                             growingThreshold="5"
                             class="sapUiResponsiveMargin"
                             width="auto"
-                            items="{test>/Customers}">
+                            items="{/Customers}">
 
                             <columns>
                                 <Column>
@@ -97,12 +97,12 @@
                             <items>
                                 <ColumnListItem>
                                     <cells>
-                                        <ObjectIdentifier title="{test>CustomerName}"/>
-                                        <Text text="{test>Street}"/>
-                                        <Text text="{test>PostCode}"/>
-                                        <Text text="{test>City}"/>
-                                        <Text text="{test>Country}"/>
-                                        <Text text="{test>Email}"/>
+                                        <ObjectIdentifier title="{CustomerName}"/>
+                                        <Text text="{Street}"/>
+                                        <Text text="{PostCode}"/>
+                                        <Text text="{City}"/>
+                                        <Text text="{Country}"/>
+                                        <Text text="{Email}"/>
                                     </cells>
                                 </ColumnListItem>
                             </items>
