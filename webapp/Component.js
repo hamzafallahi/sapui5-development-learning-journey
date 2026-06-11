@@ -1,5 +1,5 @@
-sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device"],
-    function (UIComponent, Device) {
+sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device","sap/training/exc/model/models"],
+    function (UIComponent, Device, models) {
         "use strict";
 
         return UIComponent.extend("sap.training.exc.Component", {
@@ -10,6 +10,11 @@ sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device"],
             init: function () {
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
+
+                
+                // set the device model
+                this.setModel(models.createDeviceModel(), "device");
+
             },
             
             getContentDensityClass: function () {
