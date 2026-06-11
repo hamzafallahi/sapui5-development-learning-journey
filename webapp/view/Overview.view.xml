@@ -73,7 +73,7 @@
                             mode="SingleSelectLeft"
                             selectionChange=".onCustomerChange"
                             items="{
-                                path: '/Customers',
+                                path: '/UX_Customers',                                
                                 sorter: [
                                     {path: 'City', group: true},
                                     {path: 'CustomerName'}
@@ -82,7 +82,7 @@
                             
                             <headerToolbar>
                                 <Toolbar>
-                                    <Title text="i18n>customersTableTitle"/>
+                                    <Title text="{i18n>customersTableTitle}"/>
                                     <ToolbarSpacer/>
                                     <SearchField width="{= ${device>/system/phone} ? '100%' : '40%' }" search=".onFilterCustomers"/>
                                 </Toolbar>

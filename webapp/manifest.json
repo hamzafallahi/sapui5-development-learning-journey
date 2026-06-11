@@ -72,8 +72,8 @@
                     "fallbackLocale": ""
                 }
             },
-            "ODataModel": {
-                "dataSource": "<...>",
+            "": {
+                "dataSource": "mainService",
                 "settings": {
                     "synchronizationMode": "None",
                     "operationMode": "Server",
@@ -81,7 +81,7 @@
                     "earlyRequests": true
                 }
             },
-            "": {
+            "oldtest": {
                     "type": "sap.ui.model.json.JSONModel",
                     "uri": "model/data.json"
                 }
