@@ -8,7 +8,9 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("sap.training.exc.controller.NotFound", {
-
-
+            onNavToOverview: function () {
+                var oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("overview", {}, true);
+            }
         });
     });
