@@ -73,7 +73,7 @@
                             mode="SingleSelectLeft"
                             selectionChange=".onCustomerChange"
                             items="{
-                                path: '/UX_Customers',                                
+                                path: '/UX_Customer',                                
                                 sorter: [
                                     {path: 'City', group: true},
                                     {path: 'CustomerName'}

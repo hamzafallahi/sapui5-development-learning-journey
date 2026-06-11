@@ -80,11 +80,7 @@
                     "autoExpandSelect": true,
                     "earlyRequests": true
                 }
-            },
-            "oldtest": {
-                    "type": "sap.ui.model.json.JSONModel",
-                    "uri": "model/data.json"
-                }
+            }
         },
         "resources": {
             "css": [
